@@ -1,4 +1,4 @@
-**Game Name:** Cat fishing  
+**Game Name:** Catfishing  
 It refers to how you’re playing as a cat who's fishing. Cat (you) is also the main character with a cheeky personality.
 
 **Genres:**
