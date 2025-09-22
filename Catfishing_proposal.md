@@ -4,17 +4,17 @@ It refers to how you’re playing as a cat who's fishing. Cat (you) is also the 
 **Genres:**
 
 * Platformer  
-*   
+  
 * Multi-directional  
-*   
+  
 * Jumping, Wall-jumping, Falling/descending, Dashing, Grappling  
-*   
+  
 * Avoidance, Melee attacks, Boss fights, Hazards  
-*   
+  
 * Level-based, Linear, Boss towers  
-*   
+  
 * Cartoonish, Comedy / silly  
-*   
+  
 * Precision platforming
 
 **How Genre Fits:**  
@@ -33,7 +33,7 @@ One day sea animals took over the world after an asteroid mutated all the oceans
 
 **Side characters:** King’s henchmens.
 
-**Audience:** Teens and adolescents who like
+**Audience:** Teens and adolescents who like cartoon style games
 
 **Player Motivations:** Exploring new levels, defeating bosses, progressing through story, collecting rewards
 
