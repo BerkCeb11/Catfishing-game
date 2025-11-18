@@ -18,7 +18,7 @@ It refers to how you’re playing as a cat who's fishing. Cat (you) is also the 
 * Precision platforming
 
 **How Genre Fits:**  
-The player goes through obstacle courses to get to the next level where the boss fight will happen. During each boss the fight player avoids attacks and close range attacks the boss. As a reward. The cat gets to collect fish.
+The player goes through obstacle courses to get to the next level where the boss fight will happen. During each boss fight player avoids attacks and close range attacks the boss. As a reward, the cat gets to collect fish.
 
 **Backstory:**  
 Cat lives in a world where most land is submerged underwater. Every ocean and sea inhabits a dangerous marine creature based off the continent of the ocean. Each marine boss has its own kingdom and lair as well as their own henchmen/servants. Inside the lairs, holds a delectable type of fish treat Cat searches for. Even though the bosses are defeatable, not everything is edible because of Cat’s tolerance. The environments host a lot of obstacles as well leading to the kingdoms. There’ll be different types of wind currents in the water, as well as underwater volcanos.
