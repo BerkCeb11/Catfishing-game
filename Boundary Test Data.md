@@ -47,12 +47,12 @@
   |----------------------|------------------------------------------------------|  
   | below 0             | HP: \-⅓  | *Game gives restart menu, if not then character dies infinitely*   
   | exactly 0           | HP: 0/3 | *Game give restart menu, if not character doesn’t respawn*  
-  | above max       | HP: 4/3  | *Game add health cap, if not character can’t interact with |\_\_\_\_\_                |               | enemies*  
+  | above max       | HP: 4/3  | *Game add health cap, if not character can’t interact with enemies*  
   
 
 1. “Which logic point feels most fragile?”
 
-   I think the most fragile logic point is the player movement and location.
+   		I think the most fragile logic point is the player movement and location.
 
 2. “What will I need to watch out for when coding this?”
 
