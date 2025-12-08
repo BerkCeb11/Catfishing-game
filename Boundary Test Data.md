@@ -11,9 +11,9 @@
   |-----------------------------------------------------------------------------|  
   | Boundary Input | Test Data Example | Expected Outcome             
   |----------------------|------------------------------------------------------|  
-  | off-grid              | Player Position: (0,0) | *Game teleports player to spawn point, if not* |\_\_\_                    |                                    | *done then character dies in a loop*  
-  | blocked             | Player Position: (10,0) (stuck in obstacle)| *Game teleports player to* |\_\_\_                    |                                    | *spawn point, if not done character gets blocked*  
-  | into restricted area    | Player position: (?,?) | *Game teleports player to spawn point, if* |\_\_\_\_\_                |                                            | *not done character gets blocked*
+  | off-grid              | Player Position: (0,0) | *Game teleports player to spawn point, if not done then character dies in a loop*  
+  | blocked             | Player Position: (10,0) (stuck in obstacle)| *Game teleports player to spawn point, if not done character gets blocked*  
+  | into restricted area    | Player position: (?,?) | *Game teleports player to spawn point, if not done character gets blocked*
 
 * ### Inventory limits:
 
@@ -28,9 +28,9 @@
   |-----------------------------------------------------------------------------|  
   | Boundary Input | Test Data Example | Expected Outcome             
   |----------------------|------------------------------------------------------|  
-  | full inventory     | Player Inventory: 5/5 | *Game makes player drop item(s) before getting |\_\_                      |                                   | another, if not, player can’t collect other items*  
-  | empty inventory| Player Inventory: 0/5 | *Game forces character to choose a weapon, if |\_\_                      |                                    |not, player can’t start level*             
-  | wrong item type| Player Inventory: Restricted Item/5 | *Game force drops weapon, if not, |\_\_                      |                                                          | player can’t advance levels*
+  | full inventory     | Player Inventory: 5/5 | *Game makes player drop item(s) before getting another, if not, player can’t collect other items*  
+  | empty inventory| Player Inventory: 0/5 | *Game forces character to choose a weapon, if not, player can’t start level*             
+  | wrong item type| Player Inventory: Restricted Item/5 | *Game force drops weapon, if not, player can’t advance levels*
 
 * ### Scoring or health calculations:
 
