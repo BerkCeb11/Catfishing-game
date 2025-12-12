@@ -1,0 +1,200 @@
+﻿Testing Plan — 
+
+
+1. Overview
+Describe in several sentences what this document is and what it will cover.
+This document is meant to translate user’s needs into requirement specs and evaluate the feasibility scope of the reported suggestion. This document also keeps track of progress on the game with contributors and developers.
+
+
+
+
+---
+
+
+2. User Stories and Acceptance Criteria
+
+
+User Story 1:  As a competitive player, I want to capture the gameplay of a level, so that I can rewatch it.
+
+
+- Acceptance Criterion 1: Recapture gameplay of a chosen level.
+
+
+    - Requirement(s): Create a gameplay capture feature
+    - Purpose: To record player’s experiences of levels
+    - Test Case:
+        a) Feature: Create system capturing latest gameplay
+        b) Test: Load into a game and activate the gameplay recording system
+        c) Expected Result / Behavior: Gameplay recorded and displayed
+        d) Automation Candidate: Yes
+
+
+- Acceptance Criterion 2: Presented download of the level’s gameplay.
+    - Requirement(s): Make captured levels downloadable 
+    - Purpose: To allow players to download recapture
+    - Test Case:
+        a) Feature: A system working after the gameplay capture to turn the recording downloadable
+        b) Test: Gameplay recording system finishes once level finished
+        c) Expected Result / Behavior: Another system deploys the downloadable recording
+        d) Automation Candidate: Yes
+
+
+
+
+User Story 2:  As a casual player, I want to skip all dialogue cutscenes, so that I can play the game without cutscene stops.
+
+
+- Acceptance Criterion 1: The player can skip cutscenes with dialogue.
+
+
+    - Requirement(s): Allow cutscene skips
+    - Purpose: To let players skip unwanted cutscenes
+    - Test Case:
+        a) Feature: A system to instantly quit cutscenes
+        b) Test: Activating the system once in a story cutscene
+        c) Expected Result / Behavior: Player should be in the same location and action since before cutscene
+        d) Automation Candidate: Yes
+
+
+- Acceptance Criterion 2: Skippable game mechanics with cutscenes.
+
+
+    - Requirement(s): Allow game mechanics of cutscenes be skipped too
+    - Purpose: To create cutscene skips more efficient without resources spent on mechanics during 
+    - Test Case: Deploy the mechanic once the skip cutscene system also activates
+        a) Feature: background system which runs with the skipping cutscenes system
+        b) Test: Activating cutscene skip system
+        c) Expected Result / Behavior:
+        d) Automation Candidate: Yes
+
+
+
+
+User Story 3:  As a new player, I want to get a tutorial, so that I can use the mechanics.
+
+
+- Acceptance Criterion 1: The player can start up tutorial interactions.
+
+
+    - Requirement(s): Propose tutorials when active on game
+    - Purpose: To teach or remind players how to start mechanics of game
+    - Test Case: 
+        a) Feature: Tutorial interactions with npcs and lobbies
+        b) Test: A new account is made and a level is selected
+        c) Expected Result / Behavior: Tutorials display
+        d) Automation Candidate: Yes
+
+
+- Acceptance Criterion 2: The game shows character movement and game mechanics.
+
+
+    - Requirement(s): Propose movement tutorials
+    - Purpose: To teach or remind players how to move
+    - Test Case:
+        a) Feature: Arrows, tutorial lobbies, and obstacles
+        b) Test: Level selected deployed
+        c) Expected Result / Behavior: Character directed towards obstacles and tutorials
+        d) Automation Candidate: Yes
+
+
+
+
+---
+
+
+3. Boundary and Edge Testing
+
+
+Boundary / Edge 1:  Player input that affects movement
+    - Requirement(s): Movement is synched with character direction
+    - Purpose: The player movement affects where and how Cat moves.
+
+
+    - Test Case 1:
+        a) Upper Boundary: into restricted area
+        b) Testing data used: Player position: (?,?)
+        c) Expected Result / Behavior:Game teleports player to spawn point
+        d) Automation Candidate: if not done character gets blocked
+
+
+    - Test Case 2:
+        a) Lower Boundary: off-grid
+        b) Testing data used: Player Position: (0,0)
+        c) Expected Result / Behavior: Game teleports player to spawn point
+        d) Automation Candidate: if not, done then character dies in a loop
+
+
+
+
+Boundary / Edge 2:  Inventory limits
+    - Requirement(s): Cat’s inventory corresponds with what is picked up and dropped
+    - Purpose: Cat’s inventory holds items such as weapons and treasures. Cat’s inventory limit is 5 items and shouldn’t go below 0.
+
+
+    - Test Case 1:
+        a) Upper Boundary: full inventory
+        b) Testing data used: Player Inventory: 5/5
+        c) Expected Result / Behavior: Game makes player drop item(s) before getting another
+        d) Automation Candidate: if not, player can’t collect other items
+
+
+    - Test Case 2:
+        a) Lower Boundary: negative inventory
+        b) Testing data used: Player Inventory: -1/5
+        c) Expected Result / Behavior: Game force character reset
+        d) Automation Candidate: Game force character reset
+
+
+
+
+Boundary / Edge 3:  Scoring or health calculations
+    - Requirement(s): 
+    - Purpose: Cat’s health indicates how many lives Cat has before restarting level.
+
+
+    - Test Case 1:
+        a) Upper Boundary: above max
+        b) Testing data used: HP: 4/3
+        c) Expected Result / Behavior: Game health cap blocks health overflow
+        d) Automation Candidate: if not character can’t interact with enemies
+
+
+    - Test Case 2:
+        a) Lower Boundary: below 0
+        b) Testing data used: HP: -⅓
+        c) Expected Result / Behavior: Game gives restart menu
+        d) Automation Candidate: if not then character dies infinitely
+
+
+---
+
+
+4. Automated Test List
+Which tests were candidates for Automation? 
+
+
+* Recapture gameplay of a chosen level. 
+* The player can skip cutscenes with dialogue.
+* The player can start up tutorial interactions.
+
+
+
+
+For each candidate, which kind of automated testing is recommended:  
+repetitive, rule-based, or high-volume?
+
+
+
+
+Repetitive:
+-Gameplay is constantly recorded, and after it is downloadable automatically. 
+-Automatic option to quit a cutscene and its mechanics
+
+
+
+
+Rule-based:
+-Gameplay tutorials are proposed and arrows show up directing
+
+
+high-volume:
